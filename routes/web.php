@@ -19,5 +19,3 @@ Route::get('/', function () {
 });
 
 Route::resource('admin/comics', ComicController::class);
-
-Route::get('admin/comics', [ComicController::class, 'index'])->name('comics.index');

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-/* use Illuminate\Http\Request; */
+use Illuminate\Http\Request;
 
 use App\Http\Requests\StoreComicRequest;
-use App\Http\Requests\UpdateComictRequest;
+use App\Http\Requests\UpdateComicRequest;
 use App\Models\Comic;
 
 class ComicController extends Controller
@@ -17,7 +17,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = Comic::orderByDesc('id')->get();
+        $comics = Comic::all();
         /* dd($comics); */
         return view('admin.comics.index', compact('comics'));
     }
