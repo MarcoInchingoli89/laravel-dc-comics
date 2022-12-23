@@ -1,6 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+    <section class="comics py-3">
+        <div class="container">
+            <div class="heading">
+                <h2 class="text-center">Fumetti</h2>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-primary" href="">Add Comic</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="table-responsive-md">
         <table
             class="table table-striped
