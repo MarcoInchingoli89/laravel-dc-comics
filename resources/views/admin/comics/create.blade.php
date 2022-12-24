@@ -19,6 +19,26 @@
             <input type="text" name="description" id="description" class="form-control"
                 placeholder="Scrivi qui la descrizione" aria-describedby="titleHlper">
         </div>
+        <div>
+            <label for="price" class="form-label">Price</label>
+            <input type="text" name="price" id="price" class="form-control" placeholder="Scrivi qui la descrizione"
+                aria-describedby="titleHlper">
+        </div>
+        <div>
+            <label for="series" class="form-label">Series</label>
+            <input type="text" name="series" id="series" class="form-control" placeholder="Scrivi qui la descrizione"
+                aria-describedby="titleHlper">
+        </div>
+        <div>
+            <label for="sale_data" class="form-label">Sale Data</label>
+            <input type="text" name="sale_data" id="sale_data" class="form-control"
+                placeholder="Scrivi qui la descrizione" aria-describedby="titleHlper">
+        </div>
+        <div>
+            <label for="type" class="form-label">Type</label>
+            <input type="text" name="type" id="type" class="form-control" placeholder="Scrivi qui la descrizione"
+                aria-describedby="titleHlper">
+        </div>
 
         <button class="btn btn-primary" type="submit">Aggiungi fumetto</button>
     </form>

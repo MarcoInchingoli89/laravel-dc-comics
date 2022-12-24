@@ -6,7 +6,7 @@
             <div class="heading">
                 <h2 class="text-center">Fumetti</h2>
                 <div class="d-flex justify-content-end">
-                    <a class="btn btn-primary" href="">Add Comic</a>
+                    <a class="btn btn-primary" href="{{ route('comics.create') }}">Add Comic</a>
                 </div>
             </div>
         </div>
