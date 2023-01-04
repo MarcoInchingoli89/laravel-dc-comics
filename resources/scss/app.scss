@@ -3,3 +3,118 @@
 .actions {
     margin-top: 50%;
 }
+
+main {
+    .jumbotron {
+        height: 250px;
+        background-image: url('../img/jumbotron.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.container_fluid {
+    background-color: #0282f9;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_head {
+    max-width: 80%;
+
+    .footer_icon img {
+        padding: 1rem 1rem;
+    }
+
+    .text {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer_main {
+    background-image: url('../img/footer-bg.jpg');
+}
+
+.footer_main .row {
+    width: 100%;
+}
+
+.footer_main .logo_bg {
+    background-image: url('../img/dc-logo-bg.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.footer_main h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer_main li {
+    list-style: none;
+}
+
+.footer_main a {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-around;
+    background-color: #313031;
+}
+
+.footer_bottom .btn {
+    border: 2px solid #0282f9;
+    background-color: #313031;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 50px;
+    margin: 1rem;
+}
+
+.footer_bottom .follow {
+    font-size: 1.2rem;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.social_contacts {
+    display: flex;
+    align-items: center;
+}
+
+.social_icons ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.social_icons li {
+    list-style: none;
+}

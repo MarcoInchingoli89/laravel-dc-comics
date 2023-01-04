@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comics = config('comics.comics');
+    /* dd($comics); */
+    return view('comics', compact('comics'));
 });
 
 Route::resource('admin/comics', ComicController::class);
