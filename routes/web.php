@@ -18,6 +18,6 @@ Route::get('/', function () {
     $comics = config('comics.comics');
     /* dd($comics); */
     return view('comics', compact('comics'));
-});
+})->name('comics');
 
 Route::resource('admin/comics', ComicController::class);

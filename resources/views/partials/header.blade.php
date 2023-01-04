@@ -1,7 +1,7 @@
 <header class=" d-flex justify-content-around" id="site_header">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ route('comics') }}">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo" width="80"
                     class="d-inline-block align-text-top">
             </a>
@@ -21,6 +21,7 @@
                     <a class="nav-link" href="#">Fans</a>
                     <a class="nav-link" href="#">News</a>
                     <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="{{ route('comics.index') }}">Admin Panel</a>
                 </div>
             </div>
         </div>
