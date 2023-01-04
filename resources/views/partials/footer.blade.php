@@ -128,14 +128,14 @@
                     <li>
 
                         <a class="footer_icon" href="#"><img width="30"
-                                src="../assets/img/footer-pinterest.png" alt=""></a>
+                                src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt=""></a>
 
                     </li>
 
                     <li>
 
                         <a class="footer_icon" href="#"><img width="30"
-                                src="../assets/img/footer-periscope.png" alt=""></a>
+                                src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt=""></a>
 
                     </li>
                 </ul>
