@@ -33,4 +33,17 @@ class StoreComicRequest extends FormRequest
             'type' => 'nullable|max:50'
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'title.required' => 'Il titolo è obbligatorio',
+            'title.min' => 'Il titolo deve essere almeno :min caratteri',
+            'title.max' => 'Il titolo può essere al massimo :max caratteri',
+            'thumb.max' => 'L`immagine può essere al massimo :max caratteri',
+            'price.decimal' => 'Il prezzo deve avere almeno :decimal decimali',
+            'series.max' => 'La serie può essere al massimo :max caratteri',
+            'type.max' => 'Il tipo può essere al massimo :max caratteri'
+        ];
+    }
 }
