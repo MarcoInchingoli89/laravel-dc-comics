@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateComicRequest extends FormRequest
 {
@@ -24,7 +25,12 @@ class UpdateComicRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:10|max:100',
+            'title' => [
+                'required',
+                Rule::unique('comics')->ignore($this->comic->id),
+                'min:10',
+                'max:100'
+            ],
             'description' => 'nullable',
             'thumb' => 'nullable|max:255',
             'price' => 'nullable|decimal:2',
