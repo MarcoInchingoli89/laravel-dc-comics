@@ -24,7 +24,13 @@ class StoreComicRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|min:10|max:100',
+            'description' => 'nullable',
+            'thumb' => 'nullable|max:255',
+            'price' => 'nullable|decimal:2',
+            'series' => 'nullable|max:100',
+            'sale_date' => 'nullable',
+            'type' => 'nullable|max:50'
         ];
     }
 }

@@ -38,9 +38,11 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreComicRequest $request)
     {
-        $data = [
+        /* dd($request); */
+        $val_data = $request->validated();
+        /* $data = [
             'title' => $request['title'],
             'thumb' => $request['thumb'],
             'description' => $request['description'],
@@ -48,9 +50,9 @@ class ComicController extends Controller
             'series' => $request['series'],
             'sale_date' => $request['sale_date'],
             'type' => $request['type'],
-        ];
+        ]; */
 
-        Comic::make($data)->save();
+        Comic::make($val_data)->save();
         return redirect()->route('comics.index');
     }
 
@@ -83,9 +85,10 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(UpdateComicRequest $request, Comic $comic)
     {
-        $data = [
+        $val_data = $request->validated();
+        /* $data = [
             'title' => $request['title'],
             'thumb' => $request['thumb'],
             'description' => $request['description'],
@@ -93,8 +96,8 @@ class ComicController extends Controller
             'series' => $request['series'],
             'sale_date' => $request['sale_date'],
             'type' => $request['type'],
-        ];
-        $comic->update($data);
+        ]; */
+        $comic->update($val_data);
         return to_route('comics.index');
     }
 
